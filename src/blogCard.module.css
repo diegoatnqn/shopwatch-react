@@ -1,0 +1,14 @@
+.misCards {
+	border: 2px solid black;
+	padding: 1rem;
+	margin: 1.5rem;
+	background-color: #eee;
+	box-shadow: 0 2px 5px #000;
+	width: 15rem;
+	font-size:20px;
+	display:inline-block
+}
+.ContadorLikes{
+	font-weight:600;
+	font-size:large;
+}
