@@ -1,5 +1,4 @@
 import React from 'react';
-import ProductData from './Product';
 import estiloProd from './Product.module.css';
 
 const ProductDataDisplay = (props) => {
@@ -15,8 +14,8 @@ const ProductDataDisplay = (props) => {
         console.log("COLOR ARRAY RECIBIDO" + props.colorArray)
             const miDiv = props.colorArray.map((item, pos) => {
                 return (
-                    <a onMouseEnter={() => props.cambiarColor(pos)} /*{onClick={() => this.cambiarColor(pos)}}*/>
-                        <img src={item.imageUrl} className={estiloProd.relojMini}></img>
+                    <a href="/" onMouseEnter={() => props.cambiarColor(pos)} /*{onClick={() => this.cambiarColor(pos)}}*/>
+                        <img alt="mini watch color" src={item.imageUrl} className={estiloProd.relojMini}></img>
                     </a>
                 )
             }

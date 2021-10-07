@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Product from './Product';
 import './styles.css';
 import estiloProd from './Product.module.css';
