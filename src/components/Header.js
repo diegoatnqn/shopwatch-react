@@ -1,5 +1,5 @@
 import React from 'react';
-import estiloProd from './Product.module.css';
+import estiloProd from '../styles/Product.module.css';
 
 const Header = () => {
 return (<header className="App-header">

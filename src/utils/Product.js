@@ -1,24 +1,34 @@
+import pink from "../images/pink.jpg";
+import white from "../images/white.jpg";
+import purple from "../images/purple.jpg";
+import green from "../images/green.jpg";
+import black from "../images/black.jpg";
+
 
 const ProductData = {
     title: 'FitBit 19 - The Smartest Watch',
     description: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.',
     colorOptions: [
         {
+            styleName: 'Pink Strap',
+            imageUrl: pink
+        },
+        {
             styleName: 'Black Strap',
-            imageUrl: 'https://imgur.com/iOeUBV7.png'
+            imageUrl: black
         },
         {
-            styleName: 'Red Strap',
-            imageUrl: 'https://imgur.com/PTgQlim.png'
-        },
-        {
-            styleName: 'Blue Strap',
-            imageUrl: 'https://imgur.com/Mplj1YR.png'
+            styleName: 'Green Strap',
+            imageUrl: green
         },
         {
             styleName: 'Purple Strap',
-            imageUrl: 'https://imgur.com/xSIK4M8.png'
+            imageUrl: purple
         },
+        {
+            styleName: 'White Strap',
+            imageUrl: white
+        }
     ],
     featureList: [
         "Time", "Heart Rate"

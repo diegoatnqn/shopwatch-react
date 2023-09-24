@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
-    "\\src"
+    "\\src",
+    "\\src\\components",
+    "\\src\\styles",
+    "\\src\\utils"
   ],
-  "SelectedNode": "\\public\\index.html",
+  "SelectedNode": "\\src\\components\\Visualizador.js",
   "PreviewInSolutionExplorer": false
 }

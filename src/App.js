@@ -1,10 +1,10 @@
 import React from 'react';
-import Product from './Product';
+import Product from './utils/Product';
 import './styles.css';
-import estiloProd from './Product.module.css';
-import Visualizador from './Visualizador';
-import ProductDataDisplay from './Data';
-import Header from './Header';
+import estiloProd from './styles/Product.module.css';
+import Visualizador from './components/Visualizador';
+import ProductDataDisplay from './components/Data';
+import Header from './components/Header';
 class App extends React.Component {
     state = {
         title: Product.title,
@@ -32,10 +32,17 @@ class App extends React.Component {
                 <div className="main">
                     <div className={estiloProd.container}>
                         <Visualizador currentFeature={this.state.currentFeature} color={this.state.colorActual} />
-
-                        <ProductDataDisplay title={this.state.title} description={this.state.description}
-                            colorArray={this.state.colorArray} featureArray={this.state.featureArray}
-                            cambiarColor={this.cambiarColor} cambiarFeature={this.cambiarFeature} />
+                        <div style={{
+                            display: "flex", flexDirection:"column"
+                        }}>
+                            <h1>{this.state.title}</h1>
+                            <p>{this.state.description}</p>
+                            <hr />
+                            <ProductDataDisplay
+                                colorArray={this.state.colorArray} featureArray={this.state.featureArray}
+                                cambiarColor={this.cambiarColor} cambiarFeature={this.cambiarFeature} />
+                        </div>
+                        
                     </div>
                 </div>
             </div>
